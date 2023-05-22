@@ -148,14 +148,16 @@ nav a:hover {
     margin: 1rem 0;
 }
 
-.productosFlex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.productos{
     text-align: center;
 }
 
-.productosFlex article {
+.row {
+    column-gap: 2rem;
+    margin: 2rem;
+}
+
+.productos article {
     border: 1px solid;
     padding: 2rem;
     display: flex;
@@ -167,23 +169,23 @@ nav a:hover {
 
 }
 
-.productosFlex article img {
+.productos article img {
     width: 100%;
     border-radius: 2rem;
 }
 
-.productosFlex article h3 {
+.productos article h3 {
     font-size: 2.5rem;
     margin: 1rem 0 0 0;
 }
 
-.productosFlex article p {
+.productos article p {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 1rem 0 0 0;
 }
 
-.productosFlex article button {
+.productos article button {
     border: none;
     color: white;
     background-color: rgb(193, 176, 162);
@@ -326,7 +328,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
 
     /*desktop
 
@@ -382,23 +384,21 @@ nav a:hover {
     }
 
     /* productos */
-    .productosGrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    .row {
+        column-gap: 2rem;
+    }    
 
-    .productosGrid article {
-        justify-self: center;
+    .productos article {
         position: relative;
         gap: 2rem;
     }
 
-    .productosGrid article div {
+    .productos article div {
 
         display: none;
     }
 
-    .productosGrid article:hover>div {
+    .productos article:hover>div {
         display: inline-block;
         position: absolute;
         top: 4rem;
@@ -406,19 +406,19 @@ nav a:hover {
         text-shadow: 0 0 2rem #000;
     }
 
-    .productosGrid article:hover>img {
+    .productos article:hover>img {
         opacity: 0.1;
     }
 
-    .productosGrid article h3 {
+    .productos article h3 {
         font-size: 2vw;
     }
 
-    .productosGrid article p {
+    .productos article p {
         font-size: 1.5vw;
     }
 
-    .productosGrid article button {
+    .productos article button {
         font-size: 1rem;
         margin: 0;
     }
@@ -432,7 +432,7 @@ nav a:hover {
     }
     .mayoristaFlex img {
         
-       width: 50%;
+        width: 50%;
         margin: 0;
         object-fit: contain;
     }
