@@ -11,8 +11,11 @@
 body {
     color: rgb(193, 176, 162);
     font-family: "Open sans", sans-serif;
+    
 }
-
+main {
+    min-height: 90vh;
+}
 /** barra de navegacion **/
 
 .logoNavBar {
@@ -331,7 +334,21 @@ nav a:hover {
     color: white;
     cursor: pointer;
 }
+@media only screen and (min-width: 700px) {
 
+    /* tablet */    
+    /* contacto */
+    .contacto h2{
+        margin: 2rem;
+    }
+    .contacto ul {
+        display: inline-block;
+    }
+
+    .contacto ul a {
+        margin: 1rem 2rem;
+    }
+}
 @media only screen and (min-width: 900px) {
 
     /*desktop
@@ -419,14 +436,6 @@ nav a:hover {
     }
 
     /* contacto */
-
-    .contacto ul {
-        display: inline-block;
-    }
-
-    .contacto ul a {
-        margin: 0 2rem;
-    }
 
     .contacto form div {
         display: flex;
